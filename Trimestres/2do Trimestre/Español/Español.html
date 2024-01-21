@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2do Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../2do Trimestre/2doTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. Resuelve la adivinanza</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta1.png">
+                </div>
+                <ul>
+                    <li><button onclick="victoria('p1')">Caracol</button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Araña</button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Conejo</button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Ballena</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. Resuelve la adivinanza</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta2.png">
+                </div>
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Conejo</button></li>
+                    <li><button onclick="victoria('p2')">Araña</button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Caracol</button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Jirafa</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Aquí va la pregunta?</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta3.png">
+                </div>
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Pollo, huevos y leche</button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Vegetales, huevos y leche</button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Carne, huevos y leche</button></li>
+                    <li><button onclick="victoria('p3')">Vegetales, frutas e insectos</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. Cómo son las avestruces?</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta4.png">
+                </div>
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Tienen cabeza chica, cuello largo, alas  grandes y largas</button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Tienen cabeza grande, cuello corto, alas grandes y largas</button></li>
+                    <li><button onclick="victoria('p4')">Tienen cabeza pequeña, cuello largo, alas pequeñas y largas patas.</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Tienen cabeza mediana, cuello corto, alas grandes y cortas</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. ¿¿Cuál es un sonido agradable?</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta5.png">
+                </div>
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')"><img src="img/pregunta5/r1.png" alt=""></button></li>
+                    <li><button onclick="victoria('p5')"><img src="img/pregunta5/r2.png" alt=""></button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')"><img src="img/pregunta5/r3.png" alt=""></button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')"><img src="img/pregunta5/r4.png" alt=""></button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. ¿Con cuál de las siguientes frases puede terminar un cuento?</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta6.png">
+                </div>
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Cuando menos lo esperaba llego el lobo</button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Cuando llegó a ese lugar se puso muy feliz</button></li>
+                    <li><button onclick="victoria('p6')">Y colorín colorado, este cuento se ha acabado</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. Es una frase que se usa para ir contando lo que ocurre en un cuento </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta7.png">
+                </div>
+                <ul>
+                    <li><button onclick="victoria('p7')">Cuando de repente...</button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Y fueron felices para siempre</button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Érase que se era</button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. ¿Con cuál de las siguientes frases puede iniciar un cuento?</h2>
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Caminó, y caminó hasta que llegó al final del camino.</button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Y siguió corriendo por mucho tiempo</button></li>
+                    <li><button onclick="victoria('p8')">Érase una vez…</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. ¿Aquí va la pregunta?</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta9.png">
+                </div>
+                <ul>
+                    <li><button onclick="victoria('p9')">Conejo</button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Ballena</button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Araña</button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Caracol</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. ¿Aquí va la pregunta?</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta10.png">
+                </div>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">Araña</button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Caracol</button></li>
+                    <li><button onclick="victoria('p10')">Ballena</button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Conejo</button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>
